@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="th" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ระบบสอบ Shipping Business ออนไลน์</title>
+
+  <!-- SDKs (อยู่ใน repo นี้) -->
+  <script src="./_sdk/data_sdk.js"></script>
+  <script src="./_sdk/element_sdk.js"></script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font (แนะนำแบบ link แทน @import) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { box-sizing: border-box; }
+    * { font-family: 'Sarabun', sans-serif; }
+
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+    }
+
+    .fade-in { animation: fadeIn 0.4s ease-in; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+</head>
+
+<body class="h-full bg-gradient-to-br from-blue-50 to-blue-100">
+  <div id="app" class="w-full h-full overflow-auto"></div>
+
+  <!-- App logic -->
+  <script src="./app.js"></script>
+</body>
+</html>
