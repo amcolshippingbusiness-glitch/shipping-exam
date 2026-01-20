@@ -9,7 +9,7 @@
 */
 
 (function () {
-  const GAS_WEBAPP_URL = "PUT_YOUR_APPS_SCRIPT_WEBAPP_URL_HERE";
+  const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzk0dsrrWCiFSGJUJpXC32mPWUIYHtlP7NGHwmiAeoluvwRj20UEYTQ2v9f8gEWbKcM_w/exec";
 
   function assertUrl() {
     if (!GAS_WEBAPP_URL || GAS_WEBAPP_URL.includes("PUT_YOUR")) {
